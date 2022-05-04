@@ -1,21 +1,21 @@
-namespace ConcecionariaDoDev;
-
-class Funcionario : Pessoa
+namespace ConcecionariaDoDev
 {
-    private string Cargo { get; set; }
-    public Funcionario(string cargo, string nome, 
-    string cpf, DateTime dataDeNascimento)
-    : base(nome, cpf, dataDeNascimento)
+    public class Funcionario : Pessoa
     {
-        Cargo = cargo;
+        private string Cargo { get; set; }
+        public Funcionario(string cargo, string nome,
+        string cpf, DateTime dataDeNascimento)
+        : base(nome, cpf, dataDeNascimento)
+        {
+            Cargo = cargo;
+        }
+        public void SetCargo(string cargo)
+        {
+            Cargo = cargo;
+        }
+        public string GetCargo()
+        {
+            return Cargo;
+        }
     }
-    public void SetCargo(string cargo)
-    {
-        Cargo = cargo;
-    }
-    public string GetCargo()
-    {
-        return Cargo;
-    }
-
 }

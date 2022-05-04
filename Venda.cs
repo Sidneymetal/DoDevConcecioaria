@@ -1,7 +1,7 @@
 namespace ConcecionariaDoDev
 
 {
-    public class Venda 
+    public class Venda
     {
         private Cliente Comprador { get; set; }
         private Funcionario Vendedor { get; set; }
@@ -11,26 +11,26 @@ namespace ConcecionariaDoDev
 
         public Venda(Cliente comprador, Funcionario vendedor, Veiculo veiculo, string formaDePagamento, double valorFinal)
         {
-            Comprador = comprador;
-            Vendedor = vendedor;
-            Veiculo = veiculo;
-            FormaDePagamento = formaDePagamento;
-            ValorFinal = valorFinal;
+            SetComprador(comprador);
+            SetVendedor(vendedor);
+            SetVeiculo(veiculo);
+            SetFormaDePagamento(formaDePagamento);
+            SetValorFinal(valorFinal);
         }
 
         public void SetComprador(Cliente comprador)
         {
             Comprador = comprador;
         }
-        public string GetComprador()
+        public Cliente GetComprador()
         {
-            return Comprador; ;
+            return Comprador;
         }
         public void SetVendedor(Funcionario vendedor)
         {
             Vendedor = vendedor;
         }
-        public string GetVendedor()
+        public Funcionario GetVendedor()
         {
             return Vendedor;
         }
@@ -38,7 +38,7 @@ namespace ConcecionariaDoDev
         {
             Veiculo = veiculo;
         }
-        public string GetVeiculo()
+        public Veiculo GetVeiculo()
         {
             return Veiculo;
         }
@@ -58,5 +58,15 @@ namespace ConcecionariaDoDev
         {
             return ValorFinal;
         }
+        public void AplicarDesconto()
+        {
+            if (Vendedor.GetCargo() == "Gerente")
+            {
+                ValorFinal = ValorFinal * 0.95;
+            }
+        }
     }
 }
+/*No método AplicarDesconto() considerar:
+-ValorFinal * 0,95.
+Este método só deve ser usando se Vendedor tiver o cargo de “Gerente”.*/

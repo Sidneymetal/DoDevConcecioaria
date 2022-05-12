@@ -5,11 +5,11 @@ namespace Concecionaria.WEB.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class CalculadoraController : ControllerBase
+public class PessoaController : ControllerBase
 {
     public static List<Pessoa> PessoaDaClasse { get; set; } = new List<Pessoa>();
 
-    [HttpGet()]
+    [HttpPost()]
     public IActionResult SetPessoa(Pessoa pessoa)
     {
         PessoaDaClasse.Add(pessoa);

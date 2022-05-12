@@ -15,5 +15,17 @@ public class PessoaController : ControllerBase
         PessoaDaClasse.Add(pessoa);
         return Ok(PessoaDaClasse);
     }
+    [HttpGet()]
+    public IActionResult GetPessoa()
+    {
+        return Ok(PessoaDaClasse);
+    }
+    [HttpDelete]
+    public IActionResult DeletePessoaDaClasse(Pessoa pessoa)
+    {
+        PessoaDaClasse.Remove(pessoa);
+        return Ok(pessoa);
+    }
+    
 }
 

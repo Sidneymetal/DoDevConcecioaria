@@ -3,11 +3,11 @@ namespace ConcecionariaDoDev
 {
     public class Venda
     {
-        private Cliente Comprador { get; set; }
-        private Funcionario Vendedor { get; set; }
-        private Veiculo Veiculo { get; set; }
-        private string FormaDePagamento { get; set; }
-        private double ValorFinal { get; set; }
+        public Cliente Comprador { get; set; }
+        public Funcionario Vendedor { get; set; }
+        public Veiculo Veiculo { get; set; }
+        public string FormaDePagamento { get; set; }
+        public double ValorFinal { get; set; }
 
         public Venda(Cliente comprador, Funcionario vendedor, Veiculo veiculo, string formaDePagamento, double valorFinal)
         {

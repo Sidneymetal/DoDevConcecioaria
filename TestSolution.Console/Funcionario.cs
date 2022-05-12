@@ -2,7 +2,7 @@ namespace ConcecionariaDoDev
 {
     public class Funcionario : Pessoa
     {
-        private string Cargo { get; set; }
+        public string Cargo { get; set; }
         public Funcionario(string cargo, string nome,
         string cpf, string dataDeNascimento)
         : base(nome, cpf, dataDeNascimento)

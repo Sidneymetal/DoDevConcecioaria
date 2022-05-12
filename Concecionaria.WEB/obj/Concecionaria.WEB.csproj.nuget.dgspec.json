@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sidne\\Desktop\\ConcecionariaDoDev\\TestSolution.Console\\ConcecionariaDoDev.csproj": {}
+    "C:\\Users\\sidne\\Documents\\Desktop09.05.2022\\ConcecionariaDoDev\\Concecionaria.WEB\\Concecionaria.WEB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sidne\\Desktop\\ConcecionariaDoDev\\TestSolution.Console\\ConcecionariaDoDev.csproj": {
+    "C:\\Users\\sidne\\Documents\\Desktop09.05.2022\\ConcecionariaDoDev\\Concecionaria.WEB\\Concecionaria.WEB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sidne\\Desktop\\ConcecionariaDoDev\\TestSolution.Console\\ConcecionariaDoDev.csproj",
-        "projectName": "ConcecionariaDoDev",
-        "projectPath": "C:\\Users\\sidne\\Desktop\\ConcecionariaDoDev\\TestSolution.Console\\ConcecionariaDoDev.csproj",
+        "projectUniqueName": "C:\\Users\\sidne\\Documents\\Desktop09.05.2022\\ConcecionariaDoDev\\Concecionaria.WEB\\Concecionaria.WEB.csproj",
+        "projectName": "Concecionaria.WEB",
+        "projectPath": "C:\\Users\\sidne\\Documents\\Desktop09.05.2022\\ConcecionariaDoDev\\Concecionaria.WEB\\Concecionaria.WEB.csproj",
         "packagesPath": "C:\\Users\\sidne\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sidne\\Desktop\\ConcecionariaDoDev\\TestSolution.Console\\obj\\",
+        "outputPath": "C:\\Users\\sidne\\Documents\\Desktop09.05.2022\\ConcecionariaDoDev\\Concecionaria.WEB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sidne\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,6 +37,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -48,6 +54,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

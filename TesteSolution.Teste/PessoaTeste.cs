@@ -21,4 +21,12 @@ public class PessoaTeste
         var valorAtual = pessoa.GetCpf();
         Assert.Equal(valorEsperado, valorAtual);
     }
+    [Fact]
+    public void TesteFuncionalidadeDeGetSetDataDeNascimento()
+    {
+        var valorEsperado = "10/11/1988";
+        var pessoa = new Pessoa("Sidney", "55454887", valorEsperado);
+        var valorAtual = pessoa.GetDataDeNascimento();
+        Assert.Equal(valorEsperado, valorAtual);
+    }
 }

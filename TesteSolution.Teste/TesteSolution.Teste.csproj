@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TestSolution.Console\ConcecionariaDoDev.csproj" />
+    <ProjectReference Include="..\Concecionaria.WEB\Concecionaria.WEB.csproj" />
   </ItemGroup>
 
 </Project>

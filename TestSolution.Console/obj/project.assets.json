@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sidne\\Desktop\\ConcecionariaDoDev\\ConcecionariaDoDev.csproj",
+      "projectUniqueName": "C:\\Users\\sidne\\Desktop\\ConcecionariaDoDev\\TestSolution.Console\\ConcecionariaDoDev.csproj",
       "projectName": "ConcecionariaDoDev",
-      "projectPath": "C:\\Users\\sidne\\Desktop\\ConcecionariaDoDev\\ConcecionariaDoDev.csproj",
+      "projectPath": "C:\\Users\\sidne\\Desktop\\ConcecionariaDoDev\\TestSolution.Console\\ConcecionariaDoDev.csproj",
       "packagesPath": "C:\\Users\\sidne\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sidne\\Desktop\\ConcecionariaDoDev\\obj\\",
+      "outputPath": "C:\\Users\\sidne\\Desktop\\ConcecionariaDoDev\\TestSolution.Console\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sidne\\AppData\\Roaming\\NuGet\\NuGet.Config"

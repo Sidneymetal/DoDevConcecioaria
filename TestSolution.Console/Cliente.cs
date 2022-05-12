@@ -7,7 +7,7 @@ namespace ConcecionariaDoDev
         private string Email { get; set; }
 
         public Cliente(string email, string telefone,
-         string nome, string cpf, DateTime dataDeNascimento)
+         string nome, string cpf, string dataDeNascimento)
         : base(nome, cpf, dataDeNascimento)
         {
             SetEmail(email);

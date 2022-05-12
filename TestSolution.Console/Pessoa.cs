@@ -6,11 +6,11 @@ public class Pessoa
     private string Cpf { get; set; }
     private DateTime DataDeNascimento { get; set; }
 
-    public Pessoa(string nome, string cpf, DateTime dataDeNascimento)
+    public Pessoa(string nome, string cpf, string dataDeNascimento)
     {
-        Nome = nome;
-        Cpf = cpf;
-        DataDeNascimento = dataDeNascimento;
+        SetNome(nome);
+        SetCpf(cpf);
+        SetDataDeNascimento(dataDeNascimento);
 
     }
     public void SetNome(string nome)
@@ -29,9 +29,9 @@ public class Pessoa
     {
         return Cpf;
     }
-    public void SetDataDeNascimento(DateTime dataDeNascimento)
+    public void SetDataDeNascimento(string dataDeNascimento)
     {
-        DataDeNascimento = dataDeNascimento;
+        DataDeNascimento = DateTime.Parse(dataDeNascimento);
     }
     public DateTime GetDataDeNascimento()
     {

@@ -23,9 +23,9 @@ public class PessoaController : ControllerBase
     [HttpDelete]
     public IActionResult DeletePessoaDaClasse()
     {        
-        var ContagemPessoa = Pessoa.Count<Pessoa>();
-        Pessoa.RemoveAt(ContagemPessoa - 1);
-        return Ok(Pessoa);
+        var ContagemPessoa = PessoaDaClasse.Count<Pessoa>();
+        PessoaDaClasse.RemoveAt(ContagemPessoa - 1);
+        return Ok(PessoaDaClasse);
     }
     
 }

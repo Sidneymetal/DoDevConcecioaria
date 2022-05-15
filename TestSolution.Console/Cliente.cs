@@ -12,6 +12,7 @@ namespace ConcecionariaDoDev
         {
             SetEmail(email);
             SetCpf(cpf);
+            SetTelefone(telefone);
         }
         public void SetTelefone(string telefone)
         {

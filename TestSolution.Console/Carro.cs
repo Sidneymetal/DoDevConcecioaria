@@ -1,5 +1,4 @@
-namespace ConcecionariaDoDev.TestSolution.Console.MinhasExceptions
-
+namespace ConcecionariaDoDev
 {
     public class Carro : Veiculo
     {
@@ -20,11 +19,7 @@ namespace ConcecionariaDoDev.TestSolution.Console.MinhasExceptions
             return TransmissaoAutomatica;
         }
         public void SetCombustivel(string combustivel)
-        {   
-            if(combustivel == "A")
-            {
-                throw new InputIncorreto("Essa Operação é inválida.");
-            }
+        {
             Combustivel = combustivel;
         }
         public string GetCombustivel()

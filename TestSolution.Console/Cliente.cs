@@ -26,10 +26,25 @@ namespace ConcecionariaDoDev
         {
             Email = email;
         }
+        public bool ValidarEmail(string email)
+        {
+            if (email.Contains("@"))
+            {
+                return true;
+            }
+            return false;
+        }
         public string GetEmail()
         {
             return Email;
         }
-
+        public bool ValidarTelefone(string telefone)
+        {
+            if (telefone.Length > 8 && telefone.Length < 15)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

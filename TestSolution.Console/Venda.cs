@@ -65,6 +65,22 @@ namespace ConcecionariaDoDev
                 ValorFinal = ValorFinal * 0.95;
             }
         }
+        public bool ValidarValorMoto(double valorFinal)
+        {
+            if (valorFinal > 2000)
+            {
+                return true;
+            }
+            return false;
+        }
+        public bool ValidarValorCarro(double valorFinal)
+        {
+            if (valorFinal > 5000)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }
 /*No método AplicarDesconto() considerar:

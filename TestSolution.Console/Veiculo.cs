@@ -17,8 +17,6 @@ namespace ConcecionariaDoDev
             SetCor(cor);
             SetValor(valor);
         }
-
-
         public void SetMarca(string marca)
         {
             Marca = marca;
@@ -42,6 +40,14 @@ namespace ConcecionariaDoDev
         public DateTime GetAno()
         {
             return Ano;
+        }
+        public bool ValidarAno(DateTime ano)
+        {
+            if (ano > DateTime.Parse("01/01/2004") && ano < DateTime.Now)
+            {
+                return true;
+            }
+            return false;
         }
         public void SetQuilometragem(string quilometragem)
         {
@@ -67,6 +73,7 @@ namespace ConcecionariaDoDev
         {
             return Valor;
         }
+
 
     }
 }

@@ -21,10 +21,11 @@ public class PessoaController : ControllerBase
         return Ok(PessoaDaClasse);
     }
     [HttpDelete]
-    public IActionResult DeletePessoaDaClasse(Pessoa pessoa)
-    {
-        PessoaDaClasse.Remove(pessoa);
-        return Ok(pessoa);
+    public IActionResult DeletePessoaDaClasse()
+    {        
+        var ContagemPessoa = Pessoa.Count<Pessoa>();
+        Pessoa.RemoveAt(ContagemPessoa - 1);
+        return Ok(Pessoa);
     }
     
 }

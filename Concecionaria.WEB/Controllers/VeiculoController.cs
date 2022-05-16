@@ -8,9 +8,9 @@ namespace Concecionaria.WEB.Controllers;
 
 public class VeiculoController : ControllerBase
 {
-    public static List<Cliente> ClienteDaClasse { get; set; } = new List<Cliente>();
+    public static List<Veiculo> ClienteDaClasse { get; set; } = new List<Veiculo>();
 
-    [HttpPost("ValidarTelefone")]
+    [HttpPost("ValidarAno")]
     public IActionResult ValidarValorCarro(Veiculo veiculo)
     {
         try
@@ -23,19 +23,5 @@ public class VeiculoController : ControllerBase
         {
             return BadRequest(ex.Message);
         }
-    }
-    [HttpPost("ValidarEmail")]
-    public IActionResult ValidarEmailReal(Cliente cliente)
-    {
-        try
-        {
-            cliente.ValidarEmail(cliente.GetEmail());
-            ClienteDaClasse.Add(cliente);
-            return Ok(ClienteDaClasse);
-        }
-        catch (System.Exception ex)
-        {
-            return BadRequest(ex.Message);
-        }
-    }
+    }    
 }

@@ -77,7 +77,6 @@ namespace ConcecionariaDoDev
             {
                 return true;
             }
-            return false;
             throw new InputIncorreto("Erro grave!");
         }
         public bool ValidarValorCarro(double valorFinal)
@@ -85,8 +84,7 @@ namespace ConcecionariaDoDev
             if (valorFinal > 5000)
             {
                 return true;
-            }
-            return false;
+            }            
             throw new InputIncorreto("Erro grave!");
         }
         

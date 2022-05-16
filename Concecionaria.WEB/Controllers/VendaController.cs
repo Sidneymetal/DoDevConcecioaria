@@ -26,5 +26,33 @@ public class VendaController : ControllerBase
         VendaDaClasse.Remove(venda);
         return Ok(venda);
     }
+    [HttpPost("ValidarCarro")]
+    public IActionResult ValidarValorCarro(Venda venda)
+    {
+        try
+        {
+           venda.ValidarValorCarro(venda.GetValorFinal());
+            VendaDaClasse.Add(venda);
+            return Ok(VendaDaClasse);
+        }
+        catch (System.Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+    [HttpPost("ValidarMoto")]
+    public IActionResult ValidarValorMoto(Venda venda)
+    {
+        try
+        {
+            venda.ValidarValorMoto(venda.GetValorFinal());
+            VendaDaClasse.Add(venda);
+            return Ok(VendaDaClasse);
+        }
+        catch (System.Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
 
 }

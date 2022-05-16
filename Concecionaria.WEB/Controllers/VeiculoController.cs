@@ -5,35 +5,18 @@ namespace Concecionaria.WEB.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class ClienteController : ControllerBase
+
+public class VeiculoController : ControllerBase
 {
     public static List<Cliente> ClienteDaClasse { get; set; } = new List<Cliente>();
 
-    [HttpPost()]
-    public IActionResult SetCliente(Cliente cliente)
-    {
-        ClienteDaClasse.Add(cliente);
-        return Ok(ClienteDaClasse);
-    }
-    [HttpGet()]
-    public IActionResult GetCliente()
-    {
-        return Ok(ClienteDaClasse);
-    }
-    [HttpDelete]
-    public IActionResult DeletePessoaDaClasse(Cliente cliente)
-    {
-        ClienteDaClasse.Remove(cliente);
-        return Ok(cliente);
-    }
-
     [HttpPost("ValidarTelefone")]
-    public IActionResult ValidarTelefoneReal(Cliente cliente)
+    public IActionResult ValidarValorCarro(Veiculo veiculo)
     {
         try
         {
-            cliente.ValidarTelefone(cliente.GetTelefone());
-            ClienteDaClasse.Add(cliente);
+            veiculo.ValidarAno(veiculo.GetAno());
+            ClienteDaClasse.Add(veiculo);
             return Ok(ClienteDaClasse);
         }
         catch (System.Exception ex)

@@ -10,6 +10,10 @@ namespace ConcecionariaDoDev
         public Veiculo Veiculo { get; set; }
         public string FormaDePagamento { get; set; }
         public double ValorFinal { get; set; }
+        public Venda()
+        {
+            
+        }
 
         public Venda(Cliente comprador, Funcionario vendedor, Veiculo veiculo, string formaDePagamento, double valorFinal)
         {

@@ -10,6 +10,10 @@ namespace ConcecionariaDoDev
         public string Quilometragem { get; set; }
         public string Cor { get; set; }
         public double Valor { get; set; }
+        public Veiculo()
+        {
+            
+        }
         public Veiculo(string marca, string modelo, DateTime ano, string quilometragem, string cor, double valor)
         {
             SetMarca(marca);
@@ -48,8 +52,7 @@ namespace ConcecionariaDoDev
             if (ano > DateTime.Parse("01/01/2004") && ano < DateTime.Now)
             {
                 return true;
-            }
-            return false;
+            }            
             throw new InputIncorreto("Erro grave!");
         }
         public void SetQuilometragem(string quilometragem)

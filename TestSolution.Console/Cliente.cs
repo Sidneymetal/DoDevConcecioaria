@@ -7,13 +7,16 @@ namespace ConcecionariaDoDev
     {
         public string Telefone { get; set; }
         public string Email { get; set; }
+        public Cliente()
+        {
+
+        }
 
         public Cliente(string email, string telefone,
          string nome, string cpf, string dataDeNascimento)
         : base(nome, cpf, dataDeNascimento)
         {
-            SetEmail(email);
-            SetCpf(cpf);
+            SetEmail(email);            
             SetTelefone(telefone);
         }
         public void SetTelefone(string telefone)
@@ -34,7 +37,6 @@ namespace ConcecionariaDoDev
             {
                 return true;
             }
-            return false;
             throw new InputIncorreto("Erro grave!");
         }
         public string GetEmail()
@@ -47,7 +49,6 @@ namespace ConcecionariaDoDev
             {
                 return true;
             }
-            return false;
             throw new InputIncorreto("Erro grave!");
         }
     }

@@ -1,3 +1,5 @@
+using ConcecionariaDoDev.Controllers.MinhasExceptions;
+
 namespace ConcecionariaDoDev
 {
 
@@ -33,6 +35,7 @@ namespace ConcecionariaDoDev
                 return true;
             }
             return false;
+            throw new InputIncorreto("Erro grave!");
         }
         public string GetEmail()
         {
@@ -45,6 +48,7 @@ namespace ConcecionariaDoDev
                 return true;
             }
             return false;
+            throw new InputIncorreto("Erro grave!");
         }
     }
 }

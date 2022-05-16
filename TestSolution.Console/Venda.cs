@@ -1,3 +1,5 @@
+using ConcecionariaDoDev.Controllers.MinhasExceptions;
+
 namespace ConcecionariaDoDev
 
 {
@@ -72,6 +74,7 @@ namespace ConcecionariaDoDev
                 return true;
             }
             return false;
+            throw new InputIncorreto("Erro grave!");
         }
         public bool ValidarValorCarro(double valorFinal)
         {
@@ -80,7 +83,9 @@ namespace ConcecionariaDoDev
                 return true;
             }
             return false;
+            throw new InputIncorreto("Erro grave!");
         }
+        
     }
 }
 /*No método AplicarDesconto() considerar:

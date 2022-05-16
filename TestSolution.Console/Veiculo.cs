@@ -1,3 +1,5 @@
+using ConcecionariaDoDev.Controllers.MinhasExceptions;
+
 namespace ConcecionariaDoDev
 {
     public class Veiculo
@@ -48,6 +50,7 @@ namespace ConcecionariaDoDev
                 return true;
             }
             return false;
+            throw new InputIncorreto("Erro grave!");
         }
         public void SetQuilometragem(string quilometragem)
         {

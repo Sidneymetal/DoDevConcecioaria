@@ -1,5 +1,4 @@
 using ConcecionariaDoDev.Controllers.MinhasExceptions;
-
 namespace ConcecionariaDoDev
 {
     public class Veiculo
@@ -49,7 +48,7 @@ namespace ConcecionariaDoDev
             {
                 return true;
             }            
-            throw new InputIncorreto("Erro grave!");
+            throw new InputIncorreto("Erro! Ano não pode ser menor que 2004 e maior que a data atual.");
         }
         public void SetQuilometragem(string quilometragem)
         {
@@ -75,7 +74,5 @@ namespace ConcecionariaDoDev
         {
             return Valor;
         }
-
-
     }
 }

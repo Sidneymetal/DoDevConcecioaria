@@ -5,7 +5,7 @@ public class Pessoa
     public string Nome { get; set; }
     public string Cpf { get; set; }
     public DateTime DataDeNascimento { get; set; }
-    public Pessoa(string nome, string cpf, string dataDeNascimento)
+    public Pessoa(string nome, string cpf, DateTime dataDeNascimento)
     {
         SetNome(nome);
         SetCpf(cpf);
@@ -28,9 +28,9 @@ public class Pessoa
     {
         return Cpf;
     }
-    public void SetDataDeNascimento(string dataDeNascimento)
+    public void SetDataDeNascimento(DateTime dataDeNascimento)
     {
-        DataDeNascimento = DateTime.Parse(dataDeNascimento);
+        DataDeNascimento = dataDeNascimento;
     }
     public DateTime GetDataDeNascimento()
     {

@@ -1,3 +1,4 @@
+using Concecionaria.WEB.DTOs;
 using ConcecionariaDoDev;
 using Microsoft.AspNetCore.Mvc;
 
@@ -47,6 +48,22 @@ public class ClienteController : ControllerBase
         try
         {
             cliente.ValidarEmail(cliente.GetEmail());
+            ClienteDaClasse.Add(cliente);
+            return Ok(ClienteDaClasse);
+        }
+        catch (System.Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+    [HttpPost("Validar Set Email")]
+
+    public IActionResult SetCliente(ClienteDTO clienteDto)
+    {
+        try
+        {
+            var cliente = new Cliente (clienteDto.Email, clienteDto.Telefone, 
+            clienteDto.Nome, clienteDto.Cpf, clienteDto.DataDeNascimento);
             ClienteDaClasse.Add(cliente);
             return Ok(ClienteDaClasse);
         }

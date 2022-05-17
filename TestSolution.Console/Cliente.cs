@@ -8,7 +8,7 @@ namespace ConcecionariaDoDev
         public string Telefone { get; set; }
         public string Email { get; set; }
         public Cliente(string email, string telefone,
-         string nome, string cpf, string dataDeNascimento)
+         string nome, string cpf, DateTime dataDeNascimento)
         : base(nome, cpf, dataDeNascimento)
         {
             SetEmail(email);            
@@ -32,7 +32,7 @@ namespace ConcecionariaDoDev
             {
                 return true;
             }
-            throw new InputIncorreto("Erro grave!");
+            throw new InputIncorreto("Erro! Email deve conter @.");
         }
         public string GetEmail()
         {
@@ -44,7 +44,7 @@ namespace ConcecionariaDoDev
             {
                 return true;
             }
-            throw new InputIncorreto("Erro grave!");
+            throw new InputIncorreto("Erro! Telefone não pode ser menor que 8 e maior que 15.");
         }
     }
 }

@@ -4,7 +4,7 @@ namespace ConcecionariaDoDev
     {
         public string Cargo { get; set; }
         public Funcionario(string cargo, string nome,
-        string cpf, string dataDeNascimento)
+        string cpf, DateTime dataDeNascimento)
         : base(nome, cpf, dataDeNascimento)
         {
             Cargo = cargo;

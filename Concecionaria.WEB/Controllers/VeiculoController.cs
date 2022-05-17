@@ -24,11 +24,18 @@ public class VeiculoController : ControllerBase
             return BadRequest(ex.Message);
         }
     }
-    [HttpPost("SetVeiculo")]
+    [HttpPost("Validar Set Veículo")]
     public IActionResult SetVeiculo(VeiculoDTO veiculoDTO)
     {
-        var veiculo = new Veiculo(veiculoDTO.Marca,veiculoDTO.Modelo, veiculoDTO.Ano, veiculoDTO.Quilometragem,veiculoDTO.Cor, veiculoDTO.Valor);
-        VeiculoDaClasse.Add(veiculo);
-        return Ok(VeiculoDaClasse);
+        try
+        {
+            var veiculo = new Veiculo(veiculoDTO.Marca, veiculoDTO.Modelo, veiculoDTO.Ano, veiculoDTO.Quilometragem, veiculoDTO.Cor, veiculoDTO.Valor);
+            VeiculoDaClasse.Add(veiculo);
+            return Ok(VeiculoDaClasse);
+        }
+        catch (System.Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
     }
 }

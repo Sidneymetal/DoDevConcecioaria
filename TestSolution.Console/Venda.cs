@@ -72,7 +72,7 @@ namespace ConcecionariaDoDev
             {
                 return true;
             }
-            throw new InputIncorreto("Erro grave!");
+            throw new InputIncorreto("Erro! O valor da moto não pode ser menor que 2000.");
         }
         public bool ValidarValorCarro(double valorFinal)
         {
@@ -80,7 +80,7 @@ namespace ConcecionariaDoDev
             {
                 return true;
             }            
-            throw new InputIncorreto("Erro grave!");
+            throw new InputIncorreto("Erro! O valor da moto não pode ser menor que 5000.");
         }
         
     }

@@ -1,3 +1,4 @@
+using Concecionaria.WEB.DTOs;
 using ConcecionariaDoDev;
 using Microsoft.AspNetCore.Mvc;
 
@@ -48,6 +49,20 @@ public class VendaController : ControllerBase
             venda.ValidarValorMoto(venda.GetValorFinal());
             VendaDaClasse.Add(venda);
             return Ok(VendaDaClasse);
+        }
+        catch (System.Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+    [HttpPost("Validar Set Venda.")]
+    public IActionResult SetVenda(VendaDTO vendaDto)
+    {
+        try
+        {
+            var venda = new Venda(vendaDto.Comprador, vendaDto.Vendedor, vendaDto.Veiculo, vendaDto.FormaDePagamento, vendaDto.ValorFinal);
+            VendaDaClasse.Add(venda);
+            return Ok (VendaDaClasse);
         }
         catch (System.Exception ex)
         {

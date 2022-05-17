@@ -4,10 +4,6 @@ namespace ConcecionariaDoDev
     {
         public bool TransmissaoAutomatica { get; set; }
         public string Combustivel { get; set; }
-        public Carro()
-        {
-            
-        }
         public Carro(bool transmissaoAutomatica, string combustivel, string marca, string modelo, DateTime ano, string quilometragem, string cor, double valor)
         : base(marca, modelo, ano, quilometragem, cor, valor)
         {

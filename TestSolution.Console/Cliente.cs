@@ -7,11 +7,6 @@ namespace ConcecionariaDoDev
     {
         public string Telefone { get; set; }
         public string Email { get; set; }
-        public Cliente()
-        {
-
-        }
-
         public Cliente(string email, string telefone,
          string nome, string cpf, string dataDeNascimento)
         : base(nome, cpf, dataDeNascimento)

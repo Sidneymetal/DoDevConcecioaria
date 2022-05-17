@@ -5,12 +5,6 @@ public class Pessoa
     public string Nome { get; set; }
     public string Cpf { get; set; }
     public DateTime DataDeNascimento { get; set; }
-
-    public Pessoa()
-    {
-        
-    }
-
     public Pessoa(string nome, string cpf, string dataDeNascimento)
     {
         SetNome(nome);

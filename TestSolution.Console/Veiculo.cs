@@ -9,11 +9,7 @@ namespace ConcecionariaDoDev
         public DateTime Ano { get; set; }
         public string Quilometragem { get; set; }
         public string Cor { get; set; }
-        public double Valor { get; set; }
-        public Veiculo()
-        {
-            
-        }
+        public double Valor { get; set; }        
         public Veiculo(string marca, string modelo, DateTime ano, string quilometragem, string cor, double valor)
         {
             SetMarca(marca);

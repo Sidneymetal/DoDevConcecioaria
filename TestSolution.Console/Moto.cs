@@ -6,10 +6,6 @@ namespace ConcecionariaDoDev
     {
         public int Cilindrada { get; set; }
         public string Partida { get; set; }
-        public Moto()
-        {
-            
-        }
         public Moto(int cilindrada, string partida, string marca, string modelo,
          DateTime ano, string quilometragem, string cor, double valor)
         : base(marca, modelo, ano, quilometragem, cor, valor)

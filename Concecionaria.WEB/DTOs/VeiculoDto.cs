@@ -1,6 +1,6 @@
 namespace Concecionaria.WEB.DTOs
 {
-    public class VeiculoDto
+    public class VeiculoDTO
     {
         public string Marca { get; set; }
         public string Modelo { get; set; }

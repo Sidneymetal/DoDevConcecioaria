@@ -1,6 +1,6 @@
+using Concecionaria.WEB.DTOs;
 using ConcecionariaDoDev;
 using Microsoft.AspNetCore.Mvc;
-
 namespace Concecionaria.WEB.Controllers;
 
 [ApiController]
@@ -8,7 +8,7 @@ namespace Concecionaria.WEB.Controllers;
 
 public class VeiculoController : ControllerBase
 {
-    public static List<Veiculo> ClienteDaClasse { get; set; } = new List<Veiculo>();
+    public static List<Veiculo> VeiculoDaClasse { get; set; } = new List<Veiculo>();
 
     [HttpPost("ValidarAno")]
     public IActionResult ValidarValorCarro(Veiculo veiculo)
@@ -16,12 +16,19 @@ public class VeiculoController : ControllerBase
         try
         {
             veiculo.ValidarAno(veiculo.GetAno());
-            ClienteDaClasse.Add(veiculo);
-            return Ok(ClienteDaClasse);
+            VeiculoDaClasse.Add(veiculo);
+            return Ok(VeiculoDaClasse);
         }
         catch (System.Exception ex)
         {
             return BadRequest(ex.Message);
         }
-    }    
+    }
+    [HttpPost("SetVeiculo")]
+    public IActionResult SetVeiculo(VeiculoDTO veiculoDTO)
+    {
+        var veiculo = new Veiculo(veiculoDTO.Marca,veiculoDTO.Modelo, veiculoDTO.Ano, veiculoDTO.Quilometragem,veiculoDTO.Cor, veiculoDTO.Valor);
+        VeiculoDaClasse.Add(veiculo);
+        return Ok(VeiculoDaClasse);
+    }
 }

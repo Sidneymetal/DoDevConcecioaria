@@ -4,9 +4,10 @@ namespace ConcecionariaDoDev
 {
     public class Carro : Veiculo
     {
-        public bool TransmissaoAutomatica { get; set; }
-        public string Combustivel { get; set; }
-        public Carro(bool transmissaoAutomatica, string combustivel, string marca, string modelo, DateTime ano, string quilometragem, string cor, double valor)
+        private bool TransmissaoAutomatica { get; set; }
+        private string Combustivel { get; set; }
+        public Carro(bool transmissaoAutomatica, string combustivel, 
+        string marca, string modelo, DateTime ano, string quilometragem, string cor, double valor)
         : base(marca, modelo, ano, quilometragem, cor, valor)
         {
             SetTransmissaoAutomatica(transmissaoAutomatica);
@@ -32,10 +33,10 @@ namespace ConcecionariaDoDev
         {
             if (TransmissaoAutomatica)
             {
-                Valor = Valor * 1.2;               
+                Valor = Valor * 1.2;
             }
         }
-        
+
         public override bool ValidarValorVeiculo(double valor)
         {
             if (valor > 5000)

@@ -6,8 +6,8 @@ namespace ConcecionariaDoDev
 
     public class Moto : Veiculo
     {
-        protected int Cilindrada { get; set; }
-        protected string Partida { get; set; }
+        private int Cilindrada { get; set; }
+        private string Partida { get; set; }
         public Moto(int cilindrada, string partida, string marca, string modelo,
          DateTime ano, string quilometragem, string cor, double valor)
         : base(marca, modelo, ano, quilometragem, cor, valor)

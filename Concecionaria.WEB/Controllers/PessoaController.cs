@@ -1,3 +1,4 @@
+using Concecionaria.WEB.DTOs;
 using ConcecionariaDoDev;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,23 +8,27 @@ namespace Concecionaria.WEB.Controllers;
 [Route("[controller]")]
 public class PessoaController : ControllerBase
 {
-    public static List<Pessoa> PessoaDaClasse { get; set; } = new List<Pessoa>();
+    public static List<PessoaDTO> PessoaDaClasse { get; set; } = new List<PessoaDTO>();
 
-    [HttpPost()]
-    public IActionResult SetPessoa(Pessoa pessoa)
+    [HttpPost("Validar Set Pessoa")]
+    public IActionResult SetPessoa(PessoaDTO pessoaDTO)
     {
-        PessoaDaClasse.Add(pessoa);
-        return Ok(PessoaDaClasse);
+       try
+       {
+            var pessoa = new Pessoa (pessoaDTO.Nome, pessoaDTO.Cpf, pessoaDTO.DataDeNascimento);
+            PessoaDaClasse.Add(pessoaDTO);
+            return Ok(PessoaDaClasse);
+       }
+       catch (System.Exception ex)
+       {
+            return BadRequest(ex.Message);
+       }
     }
-    [HttpGet()]
-    public IActionResult GetPessoa()
-    {
-        return Ok(PessoaDaClasse);
-    }
+    
     [HttpDelete]
     public IActionResult DeletePessoaDaClasse()
     {        
-        var ContagemPessoa = PessoaDaClasse.Count<Pessoa>();
+        var ContagemPessoa = PessoaDaClasse.Count<PessoaDTO>();
         PessoaDaClasse.RemoveAt(ContagemPessoa - 1);
         return Ok(PessoaDaClasse);
     }

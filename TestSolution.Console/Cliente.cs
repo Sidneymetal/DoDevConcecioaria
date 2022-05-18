@@ -5,8 +5,8 @@ namespace ConcecionariaDoDev
 
     public class Cliente : Pessoa
     {
-        protected string Telefone { get; set; }
-        protected string Email { get; set; }
+        private string Telefone { get; set; }
+        private string Email { get; set; }
         public Cliente(string email, string telefone,
          string nome, string cpf, DateTime dataDeNascimento)
         : base(nome, cpf, dataDeNascimento)
@@ -16,6 +16,7 @@ namespace ConcecionariaDoDev
         }
         public void SetTelefone(string telefone)
         {
+            ValidarTelefone(telefone);
             Telefone = telefone;
         }
         public string GetTelefone()
@@ -24,6 +25,7 @@ namespace ConcecionariaDoDev
         }
         public void SetEmail(string email)
         {
+            ValidarEmail (email);
             Email = email;
         }
         public bool ValidarEmail(string email)

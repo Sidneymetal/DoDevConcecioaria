@@ -1,3 +1,4 @@
+using Concecionaria.WEB.DTOs;
 using ConcecionariaDoDev;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,24 +8,29 @@ namespace Concecionaria.WEB.Controllers;
 [Route("[controller]")]
 public class MotoController : ControllerBase
 {
-    public static List<Moto> MotoDaClasse { get; set; } = new List<Moto>();
+    public static List<MotoDTO> MotoDaClasse { get; set; } = new List<MotoDTO>();
 
-    [HttpPost()]
-    public IActionResult SetMoto(Moto moto)
+    [HttpPost("Validar Set Moto")]
+    public IActionResult SetMotoDaClass(MotoDTO motoDTO)
     {
-        MotoDaClasse.Add(moto);
-        return Ok(MotoDaClasse);
+        try
+        {
+            var moto = new Moto (motoDTO.Cilindrada, motoDTO.Partida, motoDTO.Marca, 
+            motoDTO.Modelo, motoDTO.Ano, motoDTO.Quilometragem, motoDTO.Cor, motoDTO.Valor);
+            MotoDaClasse.Add(motoDTO);
+            return Ok(MotoDaClasse);
+        }
+        catch (System.Exception ex)
+        {
+             return BadRequest(ex.Message);
+        }
     }
-    [HttpGet()]
-    public IActionResult GetMoto()
-    {
-        return Ok(MotoDaClasse);
-    }
+    
     [HttpDelete]
-    public IActionResult DeleteMotoDaClasse(Moto moto)
+    public IActionResult DeleteMotoDaClasse(MotoDTO motoDTO)
     {
-        MotoDaClasse.Remove(moto);
-        return Ok(moto);
+        MotoDaClasse.Remove(motoDTO);
+        return Ok(motoDTO);
     }
 
 }

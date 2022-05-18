@@ -44,7 +44,7 @@ namespace ConcecionariaDoDev
             return Veiculo;
         }
         public void SetFormaDePagamento(string formaDePagamento)
-        {
+        {              
             FormaDePagamento = formaDePagamento;
         }
         public string GetFormaDePagamento()
@@ -65,8 +65,7 @@ namespace ConcecionariaDoDev
             {
                 ValorFinal = ValorFinal * 0.95;
             }
-        }   
-        
+        }        
     }
 }
 /*No método AplicarDesconto() considerar:

@@ -3,11 +3,11 @@ namespace ConcecionariaDoDev
 {
     public class Veiculo
     {
-        protected string Marca { get; set; }
-        protected string Modelo { get; set; }
-        protected DateTime Ano { get; set; }
-        protected string Quilometragem { get; set; }
-        protected string Cor { get; set; }
+        private string Marca { get; set; }
+        private string Modelo { get; set; }
+        private DateTime Ano { get; set; }
+        private string Quilometragem { get; set; }
+        private string Cor { get; set; }
         protected double Valor { get; set; }
         public Veiculo(string marca, string modelo, DateTime ano, string quilometragem, string cor, double valor)
         {

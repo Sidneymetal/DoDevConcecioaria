@@ -1,30 +1,35 @@
+using Concecionaria.WEB.DTOs;
 using ConcecionariaDoDev;
 using Microsoft.AspNetCore.Mvc;
-
 namespace Concecionaria.WEB.Controllers;
 
 [ApiController]
 [Route("[controller]")]
 public class CarroController : ControllerBase
 {
-    public static List<Carro> CarroDaClasse { get; set; } = new List<Carro>();
+    public static List<CarroDTO> CarroDaClasse { get; set; } = new List<CarroDTO>();
 
-    [HttpPost()]
-    public IActionResult SetCarro(Carro carro)
+    [HttpPost("Validar Set Carro")]
+    public IActionResult SetCarro(CarroDTO carroDTO)
     {
-        CarroDaClasse.Add(carro);
-        return Ok(CarroDaClasse);
+       try
+       {
+           var carro = new Carro (carroDTO.TransmissaoAutomatica, carroDTO.Combustivel, 
+           carroDTO.Marca, carroDTO.Modelo, carroDTO.Ano, carroDTO.Quilometragem, carroDTO.Cor, carroDTO.Valor);
+           CarroDaClasse.Add(carroDTO);
+           return Ok(CarroDaClasse);
+       }
+       catch (System.Exception ex)
+       {
+            return BadRequest(ex.Message);
+       }
     }
-    [HttpGet()]
-    public IActionResult GetCarro()
-    {
-        return Ok(CarroDaClasse);
-    }
+    
     [HttpDelete]
-    public IActionResult DeletePessoaDaClasse(Carro carro)
+    public IActionResult DeletePessoaDaClasse(CarroDTO carroDTO)
     {
-        CarroDaClasse.Remove(carro);
-        return Ok(carro);
+        CarroDaClasse.Remove(carroDTO);
+        return Ok(carroDTO);
     }
 
 }

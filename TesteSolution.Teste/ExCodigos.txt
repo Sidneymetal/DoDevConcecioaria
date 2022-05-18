@@ -1,0 +1,109 @@
+[HttpPost()]
+    public IActionResult SetCliente(Cliente cliente)
+    {
+        ClienteDaClasse.Add(cliente);
+        return Ok(ClienteDaClasse);
+    }
+    [HttpGet()]
+    public IActionResult GetCliente()
+    {
+        return Ok(ClienteDaClasse);
+    }
+    [HttpDelete]
+    public IActionResult DeletePessoaDaClasse(Cliente cliente)
+    {
+        ClienteDaClasse.Remove(cliente);
+        return Ok(cliente);
+    }
+
+    [HttpPost("ValidarTelefone")]
+    public IActionResult ValidarTelefoneReal(Cliente cliente)
+    {
+        try
+        {
+            cliente.ValidarTelefone(cliente.GetTelefone());
+            ClienteDaClasse.Add(cliente);
+            return Ok(ClienteDaClasse);
+        }
+        catch (System.Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+    [HttpPost("ValidarEmail")]
+    public IActionResult ValidarEmailReal(Cliente cliente)
+    {
+        try
+        {
+            cliente.ValidarEmail(cliente.GetEmail());
+            ClienteDaClasse.Add(cliente);
+            return Ok(ClienteDaClasse);
+        }
+        catch (System.Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+    [HttpPost("Validar Set Email")]
+
+
+    carrocontroller
+
+    {
+        CarroDaClasse.Add(carro);
+        return Ok(CarroDaClasse);
+    }
+    [HttpGet()]
+    public IActionResult GetCarro()
+    {
+        return Ok(CarroDaClasse);
+    }
+
+moto
+
+public IActionResult SetMoto(Moto moto)
+    {
+        MotoDaClasse.Add(moto);
+        return Ok(MotoDaClasse);
+    }
+    [HttpGet()]
+    public IActionResult GetMoto()
+    {
+        return Ok(MotoDaClasse);
+    }
+
+    funcionariocontroller
+
+    public IActionResult SetFuncionario(Funcionario funcionario)
+    {
+        FuncionarioDaClasse.Add(funcionario);
+        return Ok(FuncionarioDaClasse);
+    }
+    [HttpGet()]
+    public IActionResult GetFuncionario()
+    {
+        return Ok(FuncionarioDaClasse);
+    }
+
+    venda carrocontroller
+
+     [HttpPost()]
+    public IActionResult SetVenda(Venda venda)
+    {
+        VendaDaClasse.Add(venda);
+        return Ok(VendaDaClasse);
+    }
+    [HttpGet()]
+    public IActionResult GetVenda()
+    {
+        return Ok(VendaDaClasse);
+    }
+
+
+    [HttpDelete]
+        
+        public override IActionResult DeleteVendaDaClasse(VendaDTO vendaDTO)
+        {
+            VendaDaClasse.Remove(vendaDto);
+            return Ok(vendaDto);
+        }

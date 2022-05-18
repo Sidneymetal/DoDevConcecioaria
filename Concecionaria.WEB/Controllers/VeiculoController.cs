@@ -8,29 +8,16 @@ namespace Concecionaria.WEB.Controllers;
 
 public class VeiculoController : ControllerBase
 {
-    public static List<Veiculo> VeiculoDaClasse { get; set; } = new List<Veiculo>();
+    public static List<VeiculoDTO> VeiculoDaClasse { get; set; } = new List<VeiculoDTO>();
 
-    [HttpPost("ValidarAno")]
-    public IActionResult ValidarValorCarro(Veiculo veiculo)
-    {
-        try
-        {
-            veiculo.ValidarAno(veiculo.GetAno());
-            VeiculoDaClasse.Add(veiculo);
-            return Ok(VeiculoDaClasse);
-        }
-        catch (System.Exception ex)
-        {
-            return BadRequest(ex.Message);
-        }
-    }
+    
     [HttpPost("Validar Set Veículo")]
     public IActionResult SetVeiculo(VeiculoDTO veiculoDTO)
     {
         try
         {
             var veiculo = new Veiculo(veiculoDTO.Marca, veiculoDTO.Modelo, veiculoDTO.Ano, veiculoDTO.Quilometragem, veiculoDTO.Cor, veiculoDTO.Valor);
-            VeiculoDaClasse.Add(veiculo);
+            VeiculoDaClasse.Add(veiculoDTO);
             return Ok(VeiculoDaClasse);
         }
         catch (System.Exception ex)

@@ -2,9 +2,9 @@ namespace ConcecionariaDoDev;
 
 public class Pessoa
 {
-    public string Nome { get; set; }
-    public string Cpf { get; set; }
-    public DateTime DataDeNascimento { get; set; }
+    protected string Nome { get; set; }
+    protected string Cpf { get; set; }
+    protected DateTime DataDeNascimento { get; set; }
     public Pessoa(string nome, string cpf, DateTime dataDeNascimento)
     {
         SetNome(nome);

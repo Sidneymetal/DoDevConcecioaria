@@ -5,8 +5,8 @@ namespace ConcecionariaDoDev
 
     public class Cliente : Pessoa
     {
-        public string Telefone { get; set; }
-        public string Email { get; set; }
+        protected string Telefone { get; set; }
+        protected string Email { get; set; }
         public Cliente(string email, string telefone,
          string nome, string cpf, DateTime dataDeNascimento)
         : base(nome, cpf, dataDeNascimento)

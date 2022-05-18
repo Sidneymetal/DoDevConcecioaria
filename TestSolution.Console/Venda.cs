@@ -5,11 +5,11 @@ namespace ConcecionariaDoDev
 {
     public class Venda
     {
-        public Cliente Comprador { get; set; }
-        public Funcionario Vendedor { get; set; }
-        public Veiculo Veiculo { get; set; }
-        public string FormaDePagamento { get; set; }
-        public double ValorFinal { get; set; }        
+        private Cliente Comprador { get; set; }
+        private Funcionario Vendedor { get; set; }
+        private Veiculo Veiculo { get; set; }
+        protected string FormaDePagamento { get; set; }
+        protected double ValorFinal { get; set; }        
         public Venda(Cliente comprador, Funcionario vendedor, Veiculo veiculo, string formaDePagamento, double valorFinal)
         {
             SetComprador(comprador);
@@ -65,23 +65,7 @@ namespace ConcecionariaDoDev
             {
                 ValorFinal = ValorFinal * 0.95;
             }
-        }
-        public bool ValidarValorMoto(double valorFinal)
-        {
-            if (valorFinal > 2000)
-            {
-                return true;
-            }
-            throw new InputIncorreto("Erro! O valor da moto não pode ser menor que 2000.");
-        }
-        public bool ValidarValorCarro(double valorFinal)
-        {
-            if (valorFinal > 5000)
-            {
-                return true;
-            }            
-            throw new InputIncorreto("Erro! O valor da moto não pode ser menor que 5000.");
-        }
+        }   
         
     }
 }

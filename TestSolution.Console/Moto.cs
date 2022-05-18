@@ -1,11 +1,13 @@
+using ConcecionariaDoDev.Controllers.MinhasExceptions;
+
 namespace ConcecionariaDoDev
 
 {
 
     public class Moto : Veiculo
     {
-        public int Cilindrada { get; set; }
-        public string Partida { get; set; }
+        protected int Cilindrada { get; set; }
+        protected string Partida { get; set; }
         public Moto(int cilindrada, string partida, string marca, string modelo,
          DateTime ano, string quilometragem, string cor, double valor)
         : base(marca, modelo, ano, quilometragem, cor, valor)
@@ -38,6 +40,14 @@ namespace ConcecionariaDoDev
             {
                 Valor = Valor * 1.1;
             }
+        }
+        public override bool ValidarValorVeiculo(double valor)
+        {
+            if (valor > 2000)
+            {
+                return true;
+            }
+            throw new InputIncorreto("Erro! O valor da moto não pode ser menor que 2000.");
         }
 
     }

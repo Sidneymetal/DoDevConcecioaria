@@ -3,12 +3,12 @@ namespace ConcecionariaDoDev
 {
     public class Veiculo
     {
-        public string Marca { get; set; }
-        public string Modelo { get; set; }
-        public DateTime Ano { get; set; }
-        public string Quilometragem { get; set; }
-        public string Cor { get; set; }
-        public double Valor { get; set; }        
+        protected string Marca { get; set; }
+        protected string Modelo { get; set; }
+        protected DateTime Ano { get; set; }
+        protected string Quilometragem { get; set; }
+        protected string Cor { get; set; }
+        protected double Valor { get; set; }
         public Veiculo(string marca, string modelo, DateTime ano, string quilometragem, string cor, double valor)
         {
             SetMarca(marca);
@@ -36,6 +36,7 @@ namespace ConcecionariaDoDev
         }
         public void SetAno(DateTime ano)
         {
+            ValidarAno(ano);
             Ano = ano;
         }
         public DateTime GetAno()
@@ -68,11 +69,16 @@ namespace ConcecionariaDoDev
         }
         public void SetValor(double valor)
         {
+            ValidarValorVeiculo(valor);
             Valor = valor;
         }
         public double GetValor()
         {
             return Valor;
+        }        
+        public virtual bool ValidarValorVeiculo(double valor)
+        {
+            return true;
         }
     }
 }

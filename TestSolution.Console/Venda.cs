@@ -1,5 +1,4 @@
 using ConcecionariaDoDev.Controllers.MinhasExceptions;
-
 namespace ConcecionariaDoDev
 
 {

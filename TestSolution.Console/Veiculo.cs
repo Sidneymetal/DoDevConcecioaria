@@ -1,4 +1,5 @@
 using ConcecionariaDoDev.Controllers.MinhasExceptions;
+
 namespace ConcecionariaDoDev
 {
     public class Veiculo

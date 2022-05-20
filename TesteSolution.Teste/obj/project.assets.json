@@ -1760,11 +1760,24 @@
       "ConcecionariaDoDev/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ProjetoConcecionaria.List": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/ConcecionariaDoDev.dll": {}
         },
         "runtime": {
           "bin/placeholder/ConcecionariaDoDev.dll": {}
+        }
+      },
+      "ProjetoConcecionaria.List/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ProjetoConcecionaria.List.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProjetoConcecionaria.List.dll": {}
         }
       }
     }
@@ -6193,6 +6206,11 @@
       "type": "project",
       "path": "../TestSolution.Console/ConcecionariaDoDev.csproj",
       "msbuildProject": "../TestSolution.Console/ConcecionariaDoDev.csproj"
+    },
+    "ProjetoConcecionaria.List/1.0.0": {
+      "type": "project",
+      "path": "../ProjetoConcecionaria.List/ProjetoConcecionaria.List.csproj",
+      "msbuildProject": "../ProjetoConcecionaria.List/ProjetoConcecionaria.List.csproj"
     }
   },
   "projectFileDependencyGroups": {

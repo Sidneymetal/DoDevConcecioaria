@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TestSolution.Console\ConcecionariaDoDev.csproj" />
+    <ProjectReference Include="..\ProjetoConcecionaria.Lib\ProjetoConcecionaria.Lib.csproj" />
   </ItemGroup>
 
 

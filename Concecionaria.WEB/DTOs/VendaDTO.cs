@@ -1,4 +1,5 @@
-using ConcecionariaDoDev;
+using ProjetoConcecionaria.Lib.Models;
+using ProjetoConcecionaria.Lib.Exceptions;
 
 namespace Concecionaria.WEB.DTOs
 {

@@ -49,7 +49,6 @@ namespace ConcecionariaDoDev
             }
             throw new InputIncorreto("Erro! O valor da moto não pode ser menor que 2000.");
         }
-
     }
 }
 //- Para Motos: (Cilindradas * 50) + 10% do valor se a partida for injeção eletrônica.

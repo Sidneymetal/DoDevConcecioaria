@@ -1,5 +1,4 @@
 using ConcecionariaDoDev.Controllers.MinhasExceptions;
-
 namespace ConcecionariaDoDev
 {
     public class Carro : Veiculo
@@ -45,8 +44,6 @@ namespace ConcecionariaDoDev
             }
             throw new InputIncorreto("Erro! O valor da moto não pode ser menor que 5000.");
         }
-
-
     }
 }
 //- Para Carro: Carros automáticos são +20% mais caros.

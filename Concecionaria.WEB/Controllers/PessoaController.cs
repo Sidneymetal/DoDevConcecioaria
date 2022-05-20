@@ -1,5 +1,6 @@
 using Concecionaria.WEB.DTOs;
-using ConcecionariaDoDev;
+using ProjetoConcecionaria.Lib.Models;
+using ProjetoConcecionaria.Lib.Exceptions;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Concecionaria.WEB.Controllers;

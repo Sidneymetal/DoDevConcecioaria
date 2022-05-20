@@ -20,9 +20,9 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\TestSolution.Console\ConcecionariaDoDev.csproj" />
-    <ProjectReference Include="..\Concecionaria.WEB\Concecionaria.WEB.csproj" />
+  <ItemGroup>   
+    <ProjectReference Include="..\Concecionaria.WEB\Concecionaria.WEB.csproj" />   
+    <ProjectReference Include="..\ProjetoConcecionaria.Lib\ProjetoConcecionaria.Lib.csproj" />
   </ItemGroup>
 
 </Project>

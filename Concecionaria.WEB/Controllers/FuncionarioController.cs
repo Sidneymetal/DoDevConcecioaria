@@ -10,20 +10,25 @@ namespace Concecionaria.WEB.Controllers;
 public class FuncionarioController : ControllerBase
 {
     public static List<FuncionarioDTO> FuncionarioDaClasse { get; set; } = new List<FuncionarioDTO>();
-
+    public ILogger<FuncionarioController> Log { get; set; }
+    public FuncionarioController(ILogger<FuncionarioController> log)
+    {
+        Log = log;
+    }
     [HttpPost("Validar Set Funciáario")]
 
     public IActionResult SetFuncionario(FuncionarioDTO funcionarioDTO)
     {
         try
         {
-           var funcionario = new Funcionario(funcionarioDTO.Cargo, funcionarioDTO.Nome,
-           funcionarioDTO.Cpf, funcionarioDTO.DataDeNascimento);
-           FuncionarioDaClasse.Add(funcionarioDTO);
-           return Ok(FuncionarioDaClasse); 
+            var funcionario = new Funcionario(funcionarioDTO.Cargo, funcionarioDTO.Nome,
+            funcionarioDTO.Cpf, funcionarioDTO.DataDeNascimento);
+            FuncionarioDaClasse.Add(funcionarioDTO);
+            return Ok(FuncionarioDaClasse);
         }
         catch (System.Exception ex)
-        {
+        {   
+            Log.LogError(ex.Message);
             return BadRequest(ex.Message);
         }
     }

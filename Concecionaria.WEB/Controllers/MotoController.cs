@@ -10,7 +10,11 @@ namespace Concecionaria.WEB.Controllers;
 public class MotoController : ControllerBase
 {
     public static List<MotoDTO> MotoDaClasse { get; set; } = new List<MotoDTO>();
-
+    public ILogger<MotoController> Log { get; set;} 
+    public MotoController(ILogger<MotoController> log)
+    {
+        Log = log;
+    }
     [HttpPost("Validar Set Moto")]
     public IActionResult SetMotoDaClass(MotoDTO motoDTO)
     {
@@ -23,6 +27,7 @@ public class MotoController : ControllerBase
         }
         catch (System.Exception ex)
         {
+            Log.LogError(ex.Message);
              return BadRequest(ex.Message);
         }
     }

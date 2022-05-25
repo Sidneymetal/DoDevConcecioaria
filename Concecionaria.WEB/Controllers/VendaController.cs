@@ -10,7 +10,11 @@ namespace Concecionaria.WEB.Controllers;
 public class VendaController : ControllerBase
 {
     public static List<VendaDTO> VendaDaClasse { get; set; } = new List<VendaDTO>();
-
+    public ILogger<VendaController> Log { get; set;}
+    public VendaController(ILogger<VendaController> log)
+    {
+        Log = log;
+    }
     [HttpPost("Validar Set Venda.")]
     public IActionResult SetVenda(VendaDTO vendaDto)
     {
@@ -22,7 +26,8 @@ public class VendaController : ControllerBase
             return Ok(VendaDaClasse);
         }
         catch (System.Exception ex)
-        {
+        {   
+            Log.LogError(ex.Message);
             return BadRequest(ex.Message);
         }
     }

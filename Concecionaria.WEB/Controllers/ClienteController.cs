@@ -12,6 +12,11 @@ namespace Concecionaria.WEB.Controllers;
 public class ClienteController : ControllerBase
 {
     public static List<ClienteDTO> ClienteDaClasse { get; set; } = new List<ClienteDTO>();
+    public ILogger<ClienteController> Log { get; set; }
+    public ClienteController(ILogger<ClienteController> log)
+    {
+        Log = log;
+    }
 
     [HttpPost("Validar Set Cliente")]
     public IActionResult SetCliente(ClienteDTO clienteDto)

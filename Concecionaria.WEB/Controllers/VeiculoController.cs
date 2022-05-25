@@ -10,7 +10,11 @@ namespace Concecionaria.WEB.Controllers;
 public class VeiculoController : ControllerBase
 {
     public static List<VeiculoDTO> VeiculoDaClasse { get; set; } = new List<VeiculoDTO>();
-    
+    public ILogger<VeiculoController> Log {get; set;}
+    public VeiculoController(ILogger<VeiculoController> log)
+    {
+        Log = log;
+    }
     [HttpPost("Validar Set Veículo")]
     public IActionResult SetVeiculo(VeiculoDTO veiculoDTO)
     {
@@ -22,7 +26,8 @@ public class VeiculoController : ControllerBase
             return Ok(VeiculoDaClasse);
         }
         catch (System.Exception ex)
-        {
+        {   
+            Log.LogError(ex.Message);
             return BadRequest(ex.Message);
         }
     }

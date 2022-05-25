@@ -10,7 +10,11 @@ namespace Concecionaria.WEB.Controllers;
 public class PessoaController : ControllerBase
 {
     public static List<PessoaDTO> PessoaDaClasse { get; set; } = new List<PessoaDTO>();
-
+    public ILogger<PessoaController> Log { get; set; }
+    public PessoaController(ILogger<PessoaController> log)
+    {
+        Log = log;
+    }
     [HttpPost("Validar Set Pessoa")]
     public IActionResult SetPessoa(PessoaDTO pessoaDTO)
     {
@@ -21,7 +25,8 @@ public class PessoaController : ControllerBase
             return Ok(PessoaDaClasse);
        }
        catch (System.Exception ex)
-       {
+       {    
+           Log.LogError(ex.Message);
             return BadRequest(ex.Message);
        }
     }

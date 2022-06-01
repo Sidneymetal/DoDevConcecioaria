@@ -23,8 +23,7 @@ public class ClienteController : ControllerBase
     {
         try
         {
-            var cliente = new Cliente(clienteDto.Email, clienteDto.Telefone,
-            clienteDto.Nome, clienteDto.Cpf, clienteDto.DataDeNascimento);
+            var cliente = new Cliente(clienteDto.Telefone, clienteDto.Email, clienteDto.Nome, clienteDto.Cpf, clienteDto.DataDeNascimento);
             ClienteDaClasse.Add(clienteDto);
             return Ok(ClienteDaClasse);
         }

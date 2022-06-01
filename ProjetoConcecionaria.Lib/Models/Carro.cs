@@ -36,7 +36,6 @@ namespace ProjetoConcecionaria.Lib.Models
                 Valor = Valor * 1.2;
             }
         }
-
         public override bool ValidarValorVeiculo(double valor)
         {
             if (valor > 5000)

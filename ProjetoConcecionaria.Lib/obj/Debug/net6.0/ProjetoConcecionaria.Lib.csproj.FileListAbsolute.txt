@@ -1,0 +1,12 @@
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\ProjetoConcecionaria.Lib\bin\Debug\net6.0\ProjetoConcecionaria.Lib.deps.json
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\ProjetoConcecionaria.Lib\bin\Debug\net6.0\ProjetoConcecionaria.Lib.dll
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\ProjetoConcecionaria.Lib\bin\Debug\net6.0\ProjetoConcecionaria.Lib.pdb
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\ProjetoConcecionaria.Lib\obj\Debug\net6.0\ProjetoConcecionaria.Lib.csproj.AssemblyReference.cache
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\ProjetoConcecionaria.Lib\obj\Debug\net6.0\ProjetoConcecionaria.Lib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\ProjetoConcecionaria.Lib\obj\Debug\net6.0\ProjetoConcecionaria.Lib.AssemblyInfoInputs.cache
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\ProjetoConcecionaria.Lib\obj\Debug\net6.0\ProjetoConcecionaria.Lib.AssemblyInfo.cs
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\ProjetoConcecionaria.Lib\obj\Debug\net6.0\ProjetoConcecionaria.Lib.csproj.CoreCompileInputs.cache
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\ProjetoConcecionaria.Lib\obj\Debug\net6.0\ProjetoConcecionaria.Lib.dll
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\ProjetoConcecionaria.Lib\obj\Debug\net6.0\refint\ProjetoConcecionaria.Lib.dll
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\ProjetoConcecionaria.Lib\obj\Debug\net6.0\ProjetoConcecionaria.Lib.pdb
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\ProjetoConcecionaria.Lib\obj\Debug\net6.0\ref\ProjetoConcecionaria.Lib.dll

@@ -3,12 +3,15 @@ namespace ProjetoConcecionaria.Lib.Models
 {
     public class Veiculo
     {
+        public int Id { get; set; }
         private string Marca { get; set; }
         private string Modelo { get; set; }
         private DateTime Ano { get; set; }
         private string Quilometragem { get; set; }
         private string Cor { get; set; }
         protected double Valor { get; set; }
+        public int IdVenda {get; set;}
+        public virtual Venda Venda { get; set; }
         public Veiculo(string marca, string modelo, DateTime ano, string quilometragem, string cor, double valor)
         {
             SetMarca(marca);

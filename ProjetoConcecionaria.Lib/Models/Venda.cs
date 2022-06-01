@@ -10,6 +10,11 @@ namespace ProjetoConcecionaria.Lib.Models
         private Veiculo Veiculo { get; set; }
         protected string FormaDePagamento { get; set; }
         protected double ValorFinal { get; set; }
+        public int IdVenda {get; set;}
+        public int IdFuncionario {get; set;}
+        public virtual Carro Carro {get; set;}
+        public virtual Moto Moto {get; set;}
+        
         public Venda(Cliente comprador, Funcionario vendedor, Veiculo veiculo, string formaDePagamento, double valorFinal)
         {
             SetComprador(comprador);

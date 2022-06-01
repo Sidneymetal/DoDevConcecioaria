@@ -1,6 +1,3 @@
-C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\ConcecionariaDoDev.deps.json
-C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\ConcecionariaDoDev.runtimeconfig.json
-C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\ConcecionariaDoDev.exe
 C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\appsettings.json
 C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\Concecionaria.WEB.exe
@@ -12,8 +9,6 @@ C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\
 C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\ConcecionariaDoDev.dll
-C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\ConcecionariaDoDev.pdb
 C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\obj\Debug\net6.0\Concecionaria.WEB.csproj.AssemblyReference.cache
 C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\obj\Debug\net6.0\Concecionaria.WEB.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\obj\Debug\net6.0\Concecionaria.WEB.AssemblyInfoInputs.cache
@@ -30,3 +25,21 @@ C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\
 C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\obj\Debug\net6.0\Concecionaria.WEB.pdb
 C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\obj\Debug\net6.0\Concecionaria.WEB.genruntimeconfig.cache
 C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\obj\Debug\net6.0\ref\Concecionaria.WEB.dll
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\Npgsql.dll
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\Serilog.dll
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\Serilog.AspNetCore.dll
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\Serilog.Sinks.File.dll
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\ProjetoConcecionaria.Lib.dll
+C:\Users\sidne\Documents\Desktop09.05.2022\ConcecionariaDoDev\Concecionaria.WEB\bin\Debug\net6.0\ProjetoConcecionaria.Lib.pdb
